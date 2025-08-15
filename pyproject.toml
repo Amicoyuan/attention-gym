@@ -1,0 +1,26 @@
+[tool.black]
+line-length = 88
+
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | migrations          
+  | \{\{cookiecutter\}\} 
+)/
+'''
+
+skip-string-normalization = true
+
+safe = true
+
+[tool.isort]
+profile = "black"
+line_length = 88
