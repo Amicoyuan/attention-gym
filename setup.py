@@ -9,7 +9,10 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/RiseAI-Sys/attention-gym",
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[
+        "torch>=2.3.0",
+        "triton>=3.0.0"
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
