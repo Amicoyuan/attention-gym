@@ -113,10 +113,6 @@ def sliding_tile_attention_triton(
 
     seq_dim = 1 if tensor_layout == "NHD" else 2
 
-    smooth_k = False
-    if smooth_k:
-        k = k - k.mean(dim=seq_dim, keepdim=True)
-
     all_head_block_mask = []
 
     if len_window_sizes == 1:
