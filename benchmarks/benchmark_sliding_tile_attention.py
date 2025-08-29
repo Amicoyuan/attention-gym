@@ -2,7 +2,6 @@ import torch
 from benchmark_common_utils import Benchmark
 
 import attention_gym
-from tests.sta_flex_attention import sta_flex_attention
 
 
 class AttentionBenchmark(Benchmark):
